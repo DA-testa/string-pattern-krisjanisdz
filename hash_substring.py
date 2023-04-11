@@ -16,8 +16,9 @@ def read_input():
     elif 'F' in ievade:
         file = input()
         with open ("tests/"+file, 'r') as fails:
-            pattern = fails.readline()
-            text = fails.readline()
+            ievade = fails.readlines()
+            pattern = ievade[0]
+            text = ievade[1]
             return (pattern.rstrip(), text.rstrip())
     
     else:
