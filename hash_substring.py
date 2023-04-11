@@ -14,7 +14,7 @@ def read_input():
         return (pattern.rstrip(), text.rstrip())
 
     elif 'F' in ievade:
-        file = input()
+        file = "06"
         with open ("tests/"+file, 'r') as fails:
             ievade = fails.readlines()
             pattern = ievade[0]
